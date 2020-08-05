@@ -90,7 +90,7 @@ There are the following use cases. You may fork one of the repositories and adop
 
 ### To create sprite files from your icons
 
-[mapbox/maki](https://github.com/mapbox/maki) icons and [water-icons](https://github.com/narwassco/water-icons) icons. The Spritefiles will be generated under `docs` of this repository. In `Narok Water`'s case, the following repositories manage our icons which are being used in our style files.
+The Spritefiles will be generated from [mapbox/maki](https://github.com/mapbox/maki) icons and [water-icons](https://github.com/narwassco/water-icons) icons under `docs` of this repository. In `Narok Water`'s case, the following repositories manage our icons which are being used in our style files.
   - [water-icons](https://github.com/narwassco/water-icons) : It includes our own customized icon for water assets.
   - [mapbox-street-icons](https://github.com/narwassco/mapbox-street-icons) : It includes icons of Mapbox Street style and customized `water-icons`.
   - [mapbox-satellite-icons](https://github.com/narwassco/mapbox-satellite-icons):It includes icons of Mapbox Satellite style and customized `water-icons`.
@@ -106,14 +106,6 @@ You can use [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) to develop
 
 - `Narok Water and Sewerage Services Co., Ltd, KENYA` : [mapbox-gl-js-client](https://github.com/narwassco/mapbox-gl-js-client) 
 - `Water and Sanitation Corporation, Ltd, RWANDA` : [mapbox-gl-js-client](https://github.com/WASAX/mapbox-gl-js-client) 
-
-
-# Example
-
-The following websites are the final outputs of vector tiles maps for water sevices providers in both Kenya and Rwanda.
-
-- [Water Supply Map for Narok Water, KENYA](https://narok.water-gis.com)
-- [Water Supply Map for WASAC RWSS, RWANDA](https://narok.water-gis.com)
 
 ---
 `Copyright © 2020 Jin IGARASHI`
