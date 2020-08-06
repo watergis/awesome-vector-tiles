@@ -1,7 +1,7 @@
 # How to generate vector tiles
 
 ## The whole structure of vectortiles production in the toolkits
-![sequence](./images/sequence.svg)
+![sequence](../images/sequence.svg)
 
 ## 1. Create mbtiles from PostGIS
 - [postgis2mbtiles](https://github.com/watergis/postgis2mbtiles) : This module will create `mbtiles` by GeoJSON data which is retrieved from `PostGIS`. this module is using [tippecanoe](https://github.com/mapbox/tippecanoe), so please use Docker to generate mbtiles if your machine is `Windows`. But you can use the module directory in `MacOS` or `Ubuntu` machine
@@ -43,7 +43,7 @@ Once your stylefiles' design and mbtiles are completed, now you are ready to dep
 
 There are two cases for deploying.
 
-![flowchart](./images/deployment-flowchart.svg)
+![flowchart](../images/deployment-flowchart.svg)
 
 ### i. [`narwassco/vt-map` approach] A case of Narok Water, Kenya
 If your coverage area is small, you can use the approach of `Narok Water` to deploy. Please have a look following repository.
@@ -71,6 +71,8 @@ You can use `Task Scheduler` of Windows or `crontab` of Linux to automate your d
 - [sprite-creater](https://github.com/watergis/sprite-creator) : This module will assist you to create sprite files from your icons. 
 
 - Please create a repository which can be named `mapbox-stylefiles`. You can organize stylefiles and sprite files as following structures.
+<details>
+<summary>Folder Structures</summary>
 
 ```
 |- docs
@@ -96,6 +98,7 @@ You can use `Task Scheduler` of Windows or `crontab` of Linux to automate your d
  |- config.js
  |- sprite-create.js
 ```
+</details>
 
 There are the following use cases. You may fork one of the repositories and adopted to your own needs.
 - `Narok Water and Sewerage Services Co., Ltd, KENYA` : [mapbox-stylefiles](https://github.com/narwassco/mapbox-stylefiles)

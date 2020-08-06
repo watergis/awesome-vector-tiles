@@ -19,3 +19,6 @@
 |point_annotation|Point|10|16|We put all the annotation data here if we need to show some label.|
 
 In Narok water, although we have a pumping station at the WTP, we don't have layer for pump. I know it is significant for a water company. So, you may need to add a layer for pumping station.
+
+---
+`Copyright © 2020 Narok Water and Sewerage Services Co., Ltd., KENYA`

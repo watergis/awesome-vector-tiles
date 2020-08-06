@@ -13,11 +13,11 @@ Our vectortiles approach uses Github pages without servers. I know it is quite d
 
 ## Steps for implementation of Vectortiles
 
-1. [Requirements before setup](./requirements.md)
+1. [Requirements before setup](./contents/requirements.md)
 
-2. [How to generate vector tiles](./how-to-generate-vectortiles.md)
+2. [How to generate vector tiles](./contents/how-to-generate-vectortiles.md)
 
-3. [Cost of Operation & Maintenance for Vectortiles](./costs.md)
+3. [Cost of Operation & Maintenance for Vectortiles](./contents/costs.md)
 
 ## Use Cases
 

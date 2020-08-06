@@ -182,3 +182,7 @@ You can also see our database design from [here](https://github.com/WASAC/databa
 |---|---|---|
 |1| vill_id |Integer|
 |2| village | String |
+
+
+---
+`Copyright © 2020 Water and Sanitation Corporation, Ltd., RWANDA`
