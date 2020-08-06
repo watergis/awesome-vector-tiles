@@ -1,0 +1,7 @@
+graph TD
+	A[mbtiles] --> B{Is your coverage area large?}
+  B -->|Yes|C[wasac/vt]
+	B -->|No| D[narwassco/vt-map]
+  C -->|produce tiles locally|E[gh-pages]
+  D -->|upload mbtiles|F[github master branch]
+  F -->|produce tiles by Github Actions|E

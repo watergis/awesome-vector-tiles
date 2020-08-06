@@ -1,5 +1,8 @@
 # How to generate vector tiles
 
+## The whole structure of vectortiles production in the toolkits
+![sequence](./images/sequence.svg)
+
 ## 1. Create mbtiles from PostGIS
 - [postgis2mbtiles](https://github.com/watergis/postgis2mbtiles) : This module will create `mbtiles` by GeoJSON data which is retrieved from `PostGIS`. this module is using [tippecanoe](https://github.com/mapbox/tippecanoe), so please use Docker to generate mbtiles if your machine is `Windows`. But you can use the module directory in `MacOS` or `Ubuntu` machine
 
@@ -11,6 +14,14 @@ Making your own SQLs for your database, this step is quite significant. However,
 - `Water and Sanitation Corporation, Ltd, RWANDA` : [config.js](https://raw.githubusercontent.com/WASAC/vt/master/config.js)
 
 Because this approach can use SQL language to directly extract the data from PostGIS, it can be very frexiblely to adopt any water services providers' GIS database.
+
+### Examples of Vectortiles Design
+
+The design of vectortiles depends on your GIS database and your needs. The below designs are just an example of vectortiles implementation for your reference.
+
+- [Vectortiles Design for Narok water, Kenya](./Vector-Tile-Design-for-Narok.md)
+- [Vectortiles Design for WASAC, Rwanda](./Vector-Tile-Design-for-WASAC.md)
+
 
 ## 2. Design your Mapbox Style on Mapbox Studio
 Next step is to design your own Mapbox Style on Mapbox Studio by using `mbtile` which was produced before.
@@ -32,7 +43,9 @@ Once your stylefiles' design and mbtiles are completed, now you are ready to dep
 
 There are two cases for deploying.
 
-### A case of Narok Water, Kenya
+![flowchart](./images/deployment-flowchart.svg)
+
+### i. [`narwassco/vt-map` approach] A case of Narok Water, Kenya
 If your coverage area is small, you can use the approach of `Narok Water` to deploy. Please have a look following repository.
 
 - [vt-map](https://github.com/narwassco/vt-map)
@@ -42,7 +55,7 @@ If your coverage area is small, you can use the approach of `Narok Water` to dep
 
 This module uses [tippecanoe](https://github.com/mapbox/tippecanoe) for producing mbtiles and uses [mbutil](https://github.com/mapbox/mbutil) to convert `mbtiles`. However, Narok water's GIS computer is Windows 10 Pro, so it is not easy to run `tippecanoe`, I developed `Docker` to create Mapbox Vector Tile.
 
-### A case of WASAC, Rwanda
+### ii. [`WASAC/vt` approach] A case of WASAC, Rwanda
 If your coverage area is huge, I am afraid it is not easy to deploy thousands of vector tiles to Github pages. So you can use `WASAC` approach to deploy `mbtiles` first, then use `Github Actions` to extract vector tiles from your `mbtiles`. You can see the following repository for your reference.
 
 - [vt](https://github.com/WASAC/vt)
@@ -106,6 +119,9 @@ You can use [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) to develop
 
 - `Narok Water and Sewerage Services Co., Ltd, KENYA` : [mapbox-gl-js-client](https://github.com/narwassco/mapbox-gl-js-client) 
 - `Water and Sanitation Corporation, Ltd, RWANDA` : [mapbox-gl-js-client](https://github.com/WASAX/mapbox-gl-js-client) 
+
+### Automating deployment process for web application
+Both Narok water and WASAC's applications are using Circle CI to deploy the application to gh-pages automatically. You can also use Circle CI or Github Actions to automate.
 
 ---
 `Copyright © 2020 Jin IGARASHI`
