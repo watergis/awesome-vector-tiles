@@ -34,7 +34,7 @@ You will see how this vectortiles is powerful for your water services providers.
 
 ## Contributions
 
-This vectortiles toolkit was developed and is maintained by Jin IGARASHI(see my [portfolio](https://water-gis.com)). If you have any feedbacks, please let me know through Github's issues or pull request.  
+This vectortiles toolkit was developed and is maintained by Jin IGARASHI(see [portfolio](https://water-gis.com) if you are fascinated by more details about me). If you have any feedbacks, please let me know through Github's issues or pull request. Also, if you like my GIS works for water services providers in Africa, you can make donation through [Github Sponsor](https://github.com/sponsors/JinIgarashi).
 
 ---
 `Copyright © 2020 Jin IGARASHI`
