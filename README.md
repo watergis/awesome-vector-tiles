@@ -30,7 +30,7 @@ Our vectortiles approach uses Github pages without servers. I know it is quite d
 The following websites are the final outputs of vector tiles maps for water sevices providers in both Kenya and Rwanda which are using this vector tiles toolkit.
 
 1. [Water Supply Map for Narok Water, KENYA](https://narok.water-gis.com)
-2. [Water Supply Map for WASAC RWSS, RWANDA](https://narok.water-gis.com)
+2. [Water Supply Map for WASAC RWSS, RWANDA](https://rural.water-gis.com)
 
 The below is demo image of `Water Supply Map for WASAC RWSS`
 
