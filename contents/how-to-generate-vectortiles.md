@@ -70,7 +70,7 @@ If your coverage area is huge, I am afraid it is not easy to deploy thousands of
 `Narok Water` also started using [`WASAC/vt` approach] instead [`narwassco/vt-map` approach]. 
 - [narwassco/vt](https://github.com/narwassco/vt)
 
-### Automate the process of delopyment
+### Automate the process of deployment
 
 You can use `Task Scheduler` of Windows or `crontab` of Linux to automate your deployment process to be implemented frequently. So you can just concentrate to maintain GIS database.
 
@@ -113,10 +113,10 @@ There are the following use cases. You may fork one of the repositories and adop
 
 ### To create sprite files from your icons
 
-The Spritefiles will be generated from [mapbox/maki](https://github.com/mapbox/maki) icons and [water-icons](https://github.com/narwassco/water-icons) icons under `docs` of this repository. In `Narok Water`'s case, the following repositories manage our icons which are being used in our style files.
+The Spritefiles will be generated from [mapbox/maki](https://github.com/mapbox/maki) icons and [water-icons](https://github.com/narwassco/water-icons) icons under `docs` of this repository. `UNVT` basemap is using `mapbox/maki` icons. In `Narok Water`'s case, the following repositories manage our icons which are being used in our style files.
   - [narwassco/water-icons](https://github.com/narwassco/water-icons) : It includes our own customized icon for water assets.
-  - [narwassco/mapbox-street-icons](https://github.com/narwassco/mapbox-street-icons) : It includes icons of Mapbox Street style and customized `water-icons`.
-  - [narwassco/mapbox-satellite-icons](https://github.com/narwassco/mapbox-satellite-icons):It includes icons of Mapbox Satellite style and customized `water-icons`.
+  - [narwassco/mapbox-street-icons](https://github.com/narwassco/mapbox-street-icons) : It includes icons of Mapbox Street style.
+  - [narwassco/mapbox-satellite-icons](https://github.com/narwassco/mapbox-satellite-icons):It includes icons of Mapbox Satellite style.
 
 ### To put your Mapbox Stylefiles
 
