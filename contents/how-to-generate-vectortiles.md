@@ -1,6 +1,10 @@
 # How to generate vector tiles
 
-## The whole structure of vectortiles production in the toolkits
+## System Diagram
+
+![systemdiagram](../images/vectortiles-system-structure.png)
+
+## Sequence Diagram of vectortiles production in the toolkits
 ![sequence](../images/sequence.svg)
 
 ## 1. Create mbtiles from PostGIS

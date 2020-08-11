@@ -3,6 +3,11 @@ This is awesome implementations of the Mapbox Vector Tile for Water Services Pro
 
 ## Why Vectortiles?
 
+```
+Vector tiles make huge maps fast while offering full design flexibility. They are the vector data equivalent of image tiles for web mapping, applying the strengths of tiling — developed for caching, scaling and serving map imagery rapidly — to vector data.
+```
+the above is from [Mapbox website](https://docs.mapbox.com/vector-tiles/reference/).
+
 `Vectortiles` is the most popular and advanced mapping technology currently, its data is very light and fast, offering full design flexibility. 
 
 Its operation cost is normally cheaper compare to raster tiles data distribution.
