@@ -82,9 +82,13 @@ License](http://creativecommons.org/licenses/by/4.0/).
 If you want to use their open data, please mention their attiribution. For instance,
 
 - Attribution of Narok Water, Kenya
+```
 Copyright (c) 2020 Narok Water and Serwerage Services Co, Ltd.
+```
 - Atribution of WASAC, Rwanda
+```
 Copyright (c) 2020 Water and Sanitation Corporation, Ltd.
+```
 
 ### 3. Stylefiles and Spritefiles
 
