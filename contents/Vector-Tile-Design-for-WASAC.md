@@ -2,7 +2,13 @@
 This is the design of vector tiles for WASAC.
 You can also see our database design from [here](https://github.com/WASAC/database_documents).
 
-## 1. List of Layers
+## 1. URL of Vectortiles
+
+```
+https://wasac.github.io/vt/tiles/{z}/{x}/{y}.mvt
+```
+
+## 2. List of Layers
 
 |No|Layer|Min Zoom|Max Zoom|Geometry Type|
 |---|---|---|---|---|
@@ -23,7 +29,7 @@ You can also see our database design from [here](https://github.com/WASAC/databa
 |15|[village](#village)|14|14|Polygon|
 |16|[village_annotation](#village_annotation)|14|14|Point|
 
-## 2. List of Columns for each layers
+## 3. List of Columns for each layers
 ### pipeline
 |No|Column|Data Type|
 |---|---|---|
