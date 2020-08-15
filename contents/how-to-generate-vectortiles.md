@@ -7,7 +7,14 @@
 ## Sequence Diagram of vectortiles production in the toolkits
 ![sequence](../images/sequence.svg)
 
-## 1. Create mbtiles from PostGIS
+## 1. Create your `vt` repository from `vt-boilerplate` template repository
+
+- click `use this template` on [watergis/vt-boilerplate](https://github.com/watergis/vt-boilerplate).
+- select your organization and name `vt` for new repository.
+
+After creating your own `vt` repository, you will work on this repository from next step. All the modules are included and packaged under `vt-boilerplate`. However, if you want to use some modules seperately, you can just use it.
+
+## 2. Create mbtiles from PostGIS (work on `vt`)
 - [watergis/postgis2mbtiles](https://github.com/watergis/postgis2mbtiles) : This module will create `mbtiles` by GeoJSON data which is retrieved from `PostGIS`. this module is using [mapbox/tippecanoe](https://github.com/mapbox/tippecanoe), so please use Docker to generate mbtiles if your machine is `Windows`. But you can use the module directory in `MacOS` or `Ubuntu` machine. [watergis/postgis2mbtiles-docker](https://github.com/watergis/postgis2mbtiles-docker) is the source code for Docker implementation. 
 
 First of all, you need to make SQL queries for each layer on `config.js`, so `postgis2mbtiles` tool will extract required data from PostGIS and a mbtiles will be created.
@@ -28,7 +35,7 @@ The design of vectortiles depends on your GIS database and your needs. The below
 - [Vectortiles Design for WASAC, Rwanda](./Vector-Tile-Design-for-WASAC.md)
 
 
-## 2. Design your Mapbox Style on Mapbox Studio
+## 3. Design your Mapbox Style on Mapbox Studio
 Next step is to design your own Mapbox Style on Mapbox Studio by using `mbtile` which was produced before.
 
 For better designs of beautiful water maps, you might need to design your own icons for your layers. You may use the following icons for your reference.
@@ -43,7 +50,7 @@ You can see official manual of Mapbox Studio [here](https://docs.mapbox.com/stud
 
 You may need to repeat process of `genrating mbtiles` and `styling in Mapbox Studio` for finalying your stylefiles.
 
-## 3. Deploy Vector Tile to gh-pages
+## 4. Deploy Vector Tile to gh-pages (work on `vt`)
 
 Once your stylefiles' design and mbtiles are completed, now you are ready to deploy your vector tiles to gh-pages. [postgis2vectortiles](https://github.com/watergis/postgis2vectortiles) will assist you to create and deploy vector tiles.
 
@@ -61,7 +68,7 @@ If your coverage area is small, you can use the approach of `Narok Water` to dep
 
 This module uses [mapbox/tippecanoe](https://github.com/mapbox/tippecanoe) for producing mbtiles and uses [mbutil](https://github.com/mapbox/mbutil) to convert `mbtiles`. However, Narok water's GIS computer is Windows 10 Pro, so it is not easy to run `tippecanoe`, I developed `Docker` to create Mapbox Vector Tile.
 
-### ii. [`WASAC/vt` approach] A case of WASAC, Rwanda
+### ii. [`WASAC/vt` approach] A case of WASAC, Rwanda (Recommended)
 If your coverage area is huge, I am afraid it is not easy to deploy thousands of vector tiles to Github pages. So you can use `WASAC` approach to deploy `mbtiles` first, then use `Github Actions` to extract vector tiles from your `mbtiles`. You can see the following repository for your reference.
 
 - [WASAC/vt](https://github.com/WASAC/vt)
@@ -75,11 +82,13 @@ If your coverage area is huge, I am afraid it is not easy to deploy thousands of
 - `Nakuru Water` also started using [`WASAC/vt` approach]. 
   - [nakuruwater/vt](https://github.com/nakuruwater/vt)
 
-### Automate the process of deployment
+### Automate the process of deployment (work on `vt`)
 
 You can use `Task Scheduler` of Windows or `crontab` of Linux to automate your deployment process to be implemented frequently. So you can just concentrate to maintain GIS database.
 
-## 4. Deploy Mapbox Stylefiles and Sprite files on gh-pages
+There is `create_vt.bat` and `create_vt.sh` under `vt-boilerplate` repository. You can automate to launch this script by using `Task Scheduler` or `crontab`.
+
+## 5. Deploy Mapbox Stylefiles and Sprite files on gh-pages
 - [watergis/sprite-creater](https://github.com/watergis/sprite-creator) : This module will assist you to create sprite files from your icons. 
 
 - Please create a repository which can be named `mapbox-stylefiles`. You can organize stylefiles and sprite files as following structures.
@@ -129,7 +138,7 @@ The Spritefiles will be generated from [mapbox/maki](https://github.com/mapbox/m
 You can download your Mapbox Stylefiles from Mapbox Studio, then you can delete unnecessary contents from the stylefile, and changed url of `vector tile` and `sprite file` on it. 
 
 
-## 5. Develop and Deploy Web Application
+## 6. Develop and Deploy Web Application
 
 You can use [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) to develop your own web application and delopy it to gh-pages. It is also possible for you to fork our water services providers' application.
 
