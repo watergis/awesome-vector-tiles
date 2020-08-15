@@ -14,8 +14,9 @@ First of all, you need to make SQL queries for each layer on `config.js`, so `po
 
 Making your own SQLs for your database, this step is quite significant. However, it might have some difficulties to create SQLs. For your reference, you can have a look of following two water supply providers' setting.
 
-- `Narok Water and Sewerage Services Co., Ltd, KENYA` : [config.js](https://raw.githubusercontent.com/narwassco/vt-map/master/config.js)
-- `Water and Sanitation Corporation, Ltd, RWANDA` : [config.js](https://raw.githubusercontent.com/WASAC/vt/master/config.js)
+- `Narok Water and Sewerage Services Co., Ltd, KENYA` : [config.js](https://github.com/narwassco/vt/blob/master/config.js)
+- `Water and Sanitation Corporation, Ltd, RWANDA` : [config.js](https://github.com/WASAC/vt/blob/master/config.js)
+- `Nakuru Water and Sanitation Services Co., Ltd, KENYA` : [config.js](https://github.com/nakuruwater/vt/blob/master/config.js)
 
 Because this approach can use SQL language to directly extract the data from PostGIS, it can be very frexiblely to adopt any water services providers' GIS database.
 
@@ -34,6 +35,7 @@ For better designs of beautiful water maps, you might need to design your own ic
 
 - `Narok Water and Sewerage Services Co., Ltd, KENYA` : [narwassco/water-icons](https://github.com/narwassco/water-icons)
 - `Water and Sanitation Corporation, Ltd, RWANDA` : [WASAC/water-icons](https://github.com/WASAC/water-icons)
+- `Nakuru Water and Sanitation Services Co., Ltd, KENYA` : [nakuruwater/water-icons](https://github.com/nakuruwater/water-icons)
 
 You may need to create an account of Mapbox Studio. Also, please keep your public accessToken as well. 
 
@@ -67,8 +69,11 @@ If your coverage area is huge, I am afraid it is not easy to deploy thousands of
   - [watergis/postgis2mbtiles](https://github.com/watergis/postgis2mbtiles): It creates `mbtiles` from PostGIS. `postgis2mbtiles` module will run on your local computer.
   - [watergis/mbtiles2pbf](https://github.com/watergis/mbtiles2pbf): It converts from `mbtiles` to `pbf(mvt)` tiles. `mbtiles2pbf` will run on `Github Actions`.
 
-`Narok Water` also started using [`WASAC/vt` approach] instead [`narwassco/vt-map` approach]. 
-- [narwassco/vt](https://github.com/narwassco/vt)
+- `Narok Water` also started using [`WASAC/vt` approach] instead [`narwassco/vt-map` approach]. 
+  - [narwassco/vt](https://github.com/narwassco/vt)
+
+- `Nakuru Water` also started using [`WASAC/vt` approach]. 
+  - [nakuruwater/vt](https://github.com/nakuruwater/vt)
 
 ### Automate the process of deployment
 
@@ -110,6 +115,7 @@ You can use `Task Scheduler` of Windows or `crontab` of Linux to automate your d
 There are the following use cases. You may fork one of the repositories and adopted to your own needs.
 - `Narok Water and Sewerage Services Co., Ltd, KENYA` : [narwassco/mapbox-stylefiles](https://github.com/narwassco/mapbox-stylefiles)
 - `Water and Sanitation Corporation, Ltd, RWANDA` : [WASAC/mapbox-stylefiles](https://github.com/WASAC/mapbox-stylefiles)
+- `Nakuru Water and Sanitation Services Co., Ltd, KENYA` : [nakuruwater/mapbox-stylefiles](https://github.com/nakuruwater/mapbox-stylefiles)
 
 ### To create sprite files from your icons
 
@@ -129,6 +135,7 @@ You can use [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/) to develop
 
 - `Narok Water and Sewerage Services Co., Ltd, KENYA` : [narwassco/mapbox-gl-js-client](https://github.com/narwassco/mapbox-gl-js-client) 
 - `Water and Sanitation Corporation, Ltd, RWANDA` : [WASAC/mapbox-gl-js-client](https://github.com/WASAC/mapbox-gl-js-client) 
+- `Nakuru Water and Sanitation Services Co., Ltd, KENYA` : [nakuruwater/mapbox-gl-js-client](https://github.com/nakuruwater/mapbox-gl-js-client) 
 
 ### Customized Mapbox GL JS Plugins for this toolkit.
 

@@ -28,8 +28,9 @@ Our vectortiles approach uses Github pages without servers. I know it is quite d
 
 The following websites are the final outputs of vector tiles maps for water sevices providers in both Kenya and Rwanda which are using this vector tiles toolkit.
 
-1. [Water Supply Map for Narok Water, KENYA](https://narok.water-gis.com)
-2. [Water Supply Map for WASAC RWSS, RWANDA](https://rural.water-gis.com)
+1. [Water Supply Map for Narok Water, KENYA](https://narok.water-gis.com): since June 2020.
+2. [Water Supply Map for WASAC RWSS, RWANDA](https://rural.water-gis.com): since July 2020.
+3. [Water Supply Map for Nakuru Water, KENYA](https://nakuru.water-gis.com): since August 2020.
 
 The below is demo image of `Water Supply Map for WASAC RWSS`
 
@@ -73,8 +74,9 @@ Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
 Actual vectortiles datas are owned by their water companies. Vectortiles data are located in following repositories.
 
+- [narwassco/vt](https://github.com/narwassco/vt): Vectortiles for Narok Water, Kenya
 - [WASAC/vt](https://github.com/WASAC/vt): Vectortiles for WASAC, Rwanda
-- [narwassco/vt](https://github.com/WASAC/vt): Vectortiles for Narok Water, Kenya
+- [nakuruwater/vt](https://github.com/nakuruwater/vt): Vectortiles for Nakuru Water, Kenya
 
 Those vectortiles are licensed under a [Creative Commons Attribution 4.0 International
 License](http://creativecommons.org/licenses/by/4.0/).
@@ -89,6 +91,10 @@ Copyright (c) 2020 Narok Water and Serwerage Services Co, Ltd.
 ```
 Copyright (c) 2020 Water and Sanitation Corporation, Ltd.
 ```
+- Attribution of Nakuru Water, Kenya
+```
+Copyright (c) 2020 Nakuru Water and Sanitation Services Co, Ltd.
+```
 
 ### 3. Stylefiles and Spritefiles
 
@@ -96,6 +102,7 @@ Those stylefiles and spritefiles are following [Mapbox Style Specification](http
 
 - [narwassco/mapbox-stylefiles](https://github.com/narwassco/mapbox-stylefiles): Stylefiles for Narok Water, Kenya
 - [WASAC/mapbox-stylefiles](https://github.com/WASAC/mapbox-stylefiles): Stylefiles for WASAC, Rwanda.
+- [nakuruwater/mapbox-stylefiles](https://github.com/nakuruwater/mapbox-stylefiles): Stylefiles for Nakuru Water, Kenya
 
 Those stylefiles are licenced under `C0-1.0 License`. However, we are using some icons of Mapbox Studio. So those icons which are from Mapbox, the license also belong them.
 
