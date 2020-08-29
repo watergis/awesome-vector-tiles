@@ -46,7 +46,7 @@ I developed an [overview map](https://watergis.github.io/water-map) for to manag
 ## Lincense
 
 ### 1. Source Code
-All the source codes under `watergis` organization are open source software, they are mostly `MIT license`. 
+All the source codes under `watergis` organization are open source software, they are mostly [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT). 
 
 <details>
 <summary>List of All repositories under watergis</summary>
@@ -76,8 +76,6 @@ These repositories are not currently related to vectortiles, however I would lik
 </details>
 
 ### 2. Vector tile
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
-
 Actual vectortiles datas are owned by their water companies. Vectortiles data are located in following repositories.
 
 - [narwassco/vt](https://github.com/narwassco/vt): Vectortiles for Narok Water, Kenya
@@ -85,7 +83,7 @@ Actual vectortiles datas are owned by their water companies. Vectortiles data ar
 - [nakuruwater/vt](https://github.com/nakuruwater/vt): Vectortiles for Nakuru Water, Kenya
 
 Those vectortiles are licensed under a [Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0/).
+License](http://creativecommons.org/licenses/by/4.0/)([![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)).
 
 If you want to use their open data, please mention their attiribution. For instance,
 
@@ -102,8 +100,13 @@ Copyright (c) 2020 Water and Sanitation Corporation, Ltd.
 Copyright (c) 2020 Nakuru Water and Sanitation Services Co, Ltd.
 ```
 
-### 3. Stylefiles and Spritefiles
+Also, if you want to use our stylefiles together with base map, please put the following additional attribution on your map.
 
+```
+(c)Mapbox, (c) OpenStreetMap contributors, Powered by the United Nations Vector Tile Toolkit
+```
+
+### 3. Stylefiles and Spritefiles
 Those stylefiles and spritefiles are following [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/). The repositories are as follows.
 
 - [narwassco/mapbox-stylefiles](https://github.com/narwassco/mapbox-stylefiles): Stylefiles for Narok Water, Kenya
@@ -111,7 +114,6 @@ Those stylefiles and spritefiles are following [Mapbox Style Specification](http
 - [nakuruwater/mapbox-stylefiles](https://github.com/nakuruwater/mapbox-stylefiles): Stylefiles for Nakuru Water, Kenya
 
 Those stylefiles are licenced under `C0-1.0 License`. However, we are using some icons of Mapbox Studio. So those icons which are from Mapbox, the license also belong them.
-
 
 
 ---
