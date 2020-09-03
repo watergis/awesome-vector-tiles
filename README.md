@@ -124,7 +124,5 @@ Those stylefiles are licenced under `C0-1.0 License`. However, we are using some
 
 This vectortiles toolkit was developed and is maintained by Jin IGARASHI(see [portfolio](https://water-gis.com) if you are fascinated by more details about me). If you have any feedbacks, please let me know through Github's issues or pull request. Also, if you like my GIS works for water services providers in Africa, you can make donation through [Github Sponsor](https://github.com/sponsors/JinIgarashi).
 
-<iframe src="https://github.com/sponsors/JinIgarashi/button" title="Sponsor JinIgarashi" height="35" width="116" style="border: 0;"></iframe>
-
 ---
 `Copyright © 2020 Jin IGARASHI`
