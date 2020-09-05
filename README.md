@@ -1,8 +1,13 @@
 # awesome-vector-tiles
+
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Gitter](https://badges.gitter.im/narwassco/community.svg)](https://gitter.im/narwassco/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 This is awesome implementations of the Mapbox Vector Tile for Water Services Providers.
+
+## This repository is no longer used, it has been moved to [watergis/docs](https://github.com/watergis/docs) repository!
+
+Please visit [https://docs.water-gis.com](https://docs.water-gis.com) for the latest documentation.
 
 ---
 ## Why Vectortiles?
